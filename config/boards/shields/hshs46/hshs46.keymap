@@ -27,34 +27,29 @@
     combos {
         compatible = "zmk,combos";
 
-        spc {
+        combo_spc {
             bindings = <&kp SPACE>;
             key-positions = <16 15>;
         };
 
-        bks {
+        combo_bks {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
         };
 
-        tab {
+        combo_tab {
             bindings = <&kp TAB>;
             key-positions = <27 28>;
         };
 
-        shift {
+        combo_shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <31 32>;
         };
 
-        del {
+        combo_del {
             bindings = <&kp DEL>;
             key-positions = <28 29>;
-        };
-
-        maiusc {
-            bindings = <&capsword>;
-            key-positions = <30 31>;
         };
     };
 };
