@@ -5,7 +5,7 @@ if SHIELD_HSHS46_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "HSHS52"
+    default "HSHS46"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
