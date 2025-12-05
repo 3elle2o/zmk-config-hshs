@@ -40,8 +40,8 @@
             key-positions = <27 28>;
         };
 
-        combo_enter {
-            bindings = <&kp ENTER>;
+        combo_esc {
+            bindings = <&kp ESC>;
             key-positions = <31 32>;
         };
 
@@ -86,8 +86,8 @@
                         bindings = <
 &kp  BSPC     &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  SEMI     &kp  SQT
 &kp  ENTER    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  P        &kp ENTER
-&kp  LALT     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  ESC                                           &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  LGUI
-                                                        &kp  LGUI     &kp  LCTRL    &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  GRAVE    &kp  LALT     &kp  LGUI
+&kp  LALT     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &tog  SYM_L                                        &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  LGUI
+                                                        &kp  LGUI     &sk  LCTRL    &sk  LSHIFT    &sl  NAV_L            &sl  SYM_L    &sk  GRAVE    &kp  LALT     &kp  LGUI
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -126,7 +126,7 @@
                         bindings = <
 &kp  PLUS   &kp  MINUS    &kp N7  &kp N8  &kp N9     &kp  LPAR                                                                      &kp  HASH     &kp  DOLLAR  &kp  AMPS     &kp  LBKT     &kp  RBKT    &kp PRINTSCREEN
 &kp  ASTRK  &kp  SLASH    &kp N4  &kp N5  &kp N6     &kp  RPAR                                                                      &kp  EXCL     &kp  DEL     &kp  AT       &kp  F4       &Passpc      &Passfirma      
-&kp  EQUAL  &kp  PERCENT  &kp N1  &kp N2  &kp N3     &kp  UNDER    &kp Undo                                           &kp  Redo     &kp C_NEXT    &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP    &kp C_PREV   &kp BSLH     
+&kp  EQUAL  &kp  PERCENT  &kp N1  &kp N2  &kp N3     &kp  UNDER    &tog  SYM_L                                        &kp  Redo     &kp C_NEXT    &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP    &kp C_PREV   &kp BSLH     
                                           &kp COMMA  &kp N0        &kp ENTER       &trans                &trans       &trans        &trans        &trans
                         >;
 
