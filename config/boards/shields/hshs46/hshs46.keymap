@@ -187,7 +187,6 @@
 &trans  &kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS                                                                        &trans  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RIGHT_GUI  &sk RIGHT_ALT  &trans
 &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER        &kp   ESC                                          &kp   ESC    &trans  &trans           &trans             &trans         &trans         &trans
                                     &kp  LGUI     &kp COMMA  &trans  &kp KP_N0                                  &trans  &trans       &trans  &trans
-            >;     
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
