@@ -9,7 +9,12 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SPLIT
     default y
 
-# AGGIUNGI 'int' SUBITO DOPO IL NOME DELLA CONFIGURAZIONE:
+# 1. Dice a ZMK di accettare 2 connessioni wireless simultanee (lato DX + lato SX)
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    int
+    default 2
+
+# 2. Dice al widget dello schermo Prospector di mostrare 2 icone della batteria
 config ZMK_SPLIT_BLE_PERIPHERAL_COUNT
     int
     default 2
