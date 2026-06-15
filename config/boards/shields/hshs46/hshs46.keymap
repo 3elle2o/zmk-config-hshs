@@ -169,9 +169,9 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&trans  &kp DOLLAR     &kp LESS_THAN          &kp LEFT_BRACE    &kp LBKT           &trans                                                                 &kp SEMI   &kp COLON  &kp EXCL  &kp QUESTION &passpc          &none
-&trans  &kp HASH       &kp GREATER_THAN       &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp F2                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &passfirma       &none
-&trans  &kp BACKSLASH  &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp AMPS     &sk  RALT                                      &kp K_APP  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none
+&trans  &kp DOLLAR     &kp LESS_THAN          &kp LEFT_BRACE    &kp LBKT           &trans                                                                 &kp SEMI   &kp COLON  &kp EXCL  &kp QUESTION &passpc          &trans
+&trans  &kp HASH       &kp GREATER_THAN       &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp F2                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &passfirma       &trans
+&trans  &kp BACKSLASH  &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp AMPS     &sk  RALT                                      &kp K_APP  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &trans
                                                                 &trans             &trans       &trans       &trans               &trans       &trans     &trans     &trans
                         >;
 
