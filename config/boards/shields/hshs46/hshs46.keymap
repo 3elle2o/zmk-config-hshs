@@ -123,14 +123,13 @@
  * | 24    |   25  |   26  |   27  |   28  |   29  |  30  |-----------  -------|  31   |   32  |   33  |   34  |   35  |   36  | 37 |
  *                                 |   38  |   39  |  40  |  42  |-   --|  43  | 44    |  45   |  46   |
  */
-                        bindings = <
-&kp ESC     &kp Q  &kp W  &kp E    &kp R       &kp T                                                             &kp Y         &kp U      &kp I      &kp O       &kp TAB     &kp ESC 
-&sk LSHIFT  &kp A  &kp S  &kp D    &kp F       &kp G                                                             &kp H         &kp J      &kp K      &kp L       &kp P       &sk LGUI
-&sk LCTRL   &kp Z  &kp X  &kp C    &kp V       &kp B    &kp LEFT                                     &kp RIGHT   &kp N         &kp M      &kp COMMA  &kp KP_DOT  &caps_word  &sk LALT
-                                   &kp DOWN    &sl 4    &num_word 1   &sk LSHIFT              &sl 2  &sk LCTRL   &mau_word 3   &kp UP
+                        bindings = < 
+&kp ESC     &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &kp TAB     &kp ESC 
+&sk LSHIFT  &kp A  &kp S  &kp D    &kp F       &kp G                                                              &kp H         &kp J      &kp K      &kp L       &kp P       &sk LGUI
+&sk LCTRL   &kp Z  &kp X  &kp C    &kp V       &kp B     &sl 4                                        &mau_word 3 &kp N         &kp M      &kp COMMA  &kp KP_DOT  &caps_word  &sk LALT
+                                   &kp DOWN    &kp LEFT  &num_word 1   &sk LSHIFT              &sl 2  &sk LCTRL   &kp RIGHT     &kp UP
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 colemak_layer {
@@ -143,13 +142,12 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH                                                                        &trans  &trans           &trans             &trans         &trans         &trans
-&trans  &kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS                                                                        &trans  &trans           &trans             &trans         &trans         &trans
-&trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &kp COMMA                                                  &trans     &trans  &trans           &trans             &trans         &trans         &trans
-                                         &trans     &trans     &trans     &kp KP_N0                             &trans    &trans     &trans  &trans
+&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans                                                                             &trans    &trans      &trans       &trans       &trans     &trans
+&trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans                                                                             &kp EQUAL &kp PLUS    &kp MINUS    &kp SLASH    &kp ASTRK  &trans
+&trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER    &trans                                                     &trans     &trans    &trans      &trans       &trans       &trans     &trans    
+                                      &kp COMMA  &kp KP_N0    &trans   &trans                                  &trans    &trans     &trans  &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 sym_layer {
@@ -163,12 +161,11 @@
  */
                         bindings = <
 &trans  &kp DOLLAR     &kp LESS_THAN          &kp LEFT_BRACE    &kp LBKT           &trans                                                                 &kp SEMI   &kp COLON  &kp EXCL  &kp QUESTION &passpc          &trans
-&trans  &kp HASH       &kp GREATER_THAN       &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp F2                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &passfirma       &trans
-&trans  &kp BACKSLASH  &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp AMPS     &trans                                         &trans     &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &trans
+&trans  &kp HASH       &kp GREATER_THAN       &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp F2                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp SLASH    &passfirma       &trans
+&trans  &kp BACKSLASH  &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp AMPS     &trans                                         &trans     &kp UNDER  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &trans
                                                                 &trans             &trans       &trans       &trans               &trans       &trans     &trans     &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 adj_layer {
@@ -187,7 +184,6 @@
                                             &trans          &trans          &trans    &trans                &mmv MOVE_DOWN    &trans  &trans  &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 media_layer {
@@ -206,7 +202,6 @@
                                             &trans             &trans        &trans       &trans             &trans     &trans    &trans  &trans
                         >;
 
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
         };
