@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2021-2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+
 
 #include <dt-bindings/zmk/behaviors.h>
 #include <behaviors/num_word.dtsi>
