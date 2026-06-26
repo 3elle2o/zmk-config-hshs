@@ -126,7 +126,7 @@
                         bindings = < 
 &sl 4        &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &kp TAB     &mau_word 3
 &num_word 1  &kp A  &kp S  &kp D    &kp F       &kp G                                                              &kp H         &kp J      &kp K      &kp L       &kp P       &caps_word
-&sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &tog 1                                     &CAPS       &kp N         &kp M      &kp COMMA  &kp KP_DOT  &sk LALT    &sk LGUI
+&sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &tog 1                                     &kp CAPS    &kp N         &kp M      &kp COMMA  &kp KP_DOT  &sk LALT    &sk LGUI
                                     &kp ESC     &kp DOWN    &kp LEFT     &sk LSHIFT             &sl 2  &kp RIGHT   &kp UP        &kp ESC
                         >;
 
