@@ -130,9 +130,9 @@
  *                                 |   38  |   39  |  40  |  42  |-   --|  43  | 44    |  45   |  46   |
  */
                         bindings = < 
-&sl 4        &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &passpc       &passfirma
+&sl 4        &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &kp PSCRN     &kp C_SLEEP   
 &sk LGUI     &kp A  &kp S  &kp D    &kp F       &kp G                                                              &kp H         &kp J      &kp K      &kp L       &kp P         &mau_word 3
-&sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &kp ESC                                    &kp ESC     &kp N         &kp M      &kp COMMA  &kp KP_DOT  &kp TAB       &sk LALT
+&sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &passpc                                    &passfirma  &kp N         &kp M      &kp COMMA  &kp KP_DOT  &kp TAB       &sk LALT
                                     &kp ESC     &kp UP      &kp LEFT      &sk LSHIFT            &sl 2  &kp RIGHT   &kp DOWN      &kp ESC  
                         >
 
@@ -166,9 +166,9 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&trans  &kp DOLLAR     &kp LESS_THAN          &kp LEFT_BRACE    &kp LBKT           &trans                                                                 &kp SEMI   &kp COLON  &kp EXCL  &kp QUESTION &trans           &trans
-&trans  &kp HASH       &kp GREATER_THAN       &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp F2                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp SLASH    &trans           &trans
-&trans  &kp BACKSLASH  &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp AMPS     &trans                                         &trans     &kp UNDER  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &trans
+&trans  &trans  &trans   &kp LEFT_BRACE    &kp LBKT           &trans                                                                 &kp SEMI   &kp COLON  &kp EXCL  &kp QUESTION &kp DOLLAR      &kp LESS_THAN
+&trans  &trans  &trans   &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &trans                                                                 &kp DQT    &kp LPAR   &kp RPAR  &kp SLASH    &kp BACKSLASH   &kp GREATER_THAN 
+&trans  &trans  &trans   &trans            &kp AMPS           &trans     &trans                                         &trans       &kp UNDER  &kp AT     &kp HOME  &kp PERCENT  &kp HASH        &kp F2
                                                                 &trans             &trans       &trans       &trans               &trans       &trans     &trans     &trans
                         >;
 
