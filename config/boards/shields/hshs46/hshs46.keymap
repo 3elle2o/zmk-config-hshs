@@ -135,7 +135,6 @@
 &sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &passpc                                    &passfirma  &kp N         &kp M      &kp COMMA  &kp KP_DOT  &kp TAB       &sk LALT
                                     &kp ESC     &kp UP      &kp LEFT      &sk LSHIFT            &sl 2  &kp RIGHT   &kp DOWN      &kp ESC  
                         >
-
                 };
 
                 colemak_layer {
@@ -153,7 +152,6 @@
 &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER    &trans                                                     &trans     &trans    &trans      &trans       &trans       &trans     &trans    
                                       &trans     &trans       &kp COMMA  &kp KP_N0                             &trans    &trans     &trans  &trans
                         >;
-
                 };
 
                 sym_layer {
@@ -171,7 +169,6 @@
 &trans  &trans  &trans   &trans            &kp AMPS           &trans     &trans                                         &trans       &kp UNDER  &kp AT     &kp HOME  &kp PERCENT  &kp HASH        &kp F2
                                                                 &trans             &trans       &trans       &trans               &trans       &trans     &trans     &trans
                         >;
-
                 };
 
                 adj_layer {
@@ -189,7 +186,6 @@
 &trans  &trans          &trans    &trans    &msc SCRL_DOWN  &trans          &trans                                            &trans  &trans  &trans          &trans        &trans           &trans          &trans
                                             &trans          &trans          &trans    &trans                &mmv MOVE_DOWN    &trans  &trans  &trans
                         >;
-
                 };
 
                 media_layer {
@@ -207,8 +203,6 @@
 &trans  &trans  &trans          &trans      &kp C_VOLUME_DOWN  &trans        &trans                                     &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans             &trans        &trans       &trans             &trans     &trans    &trans  &trans
                         >;
-
                 };
-
         };
 };
