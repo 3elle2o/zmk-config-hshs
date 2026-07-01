@@ -144,8 +144,8 @@
  *                                 |   38  |   39  |  40  |  42  |-   --|  43  | 44    |  45   |  46   |
  */
                         bindings = < 
-&sl 4        &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &kp PSCRN     &kp C_SLEEP   
-&sk LGUI     &kp A  &kp S  &kp D    &kp F       &kp G                                                              &kp H         &kp J      &kp K      &kp L       &kp P         &mau_word 3
+&sl 4        &kp Q  &kp W  &kp E    &kp R       &kp T                                                              &kp Y         &kp U      &kp I      &kp O       &kp PSCRN     &mau_word 3 
+&sk LGUI     &kp A  &kp S  &kp D    &kp F       &kp G                                                              &kp H         &kp J      &kp K      &kp L       &kp P         &sk LSHIFT
 &sk LCTRL    &kp Z  &kp X  &kp C    &kp V       &kp B       &passpc                                    &passfirma  &kp N         &kp M      &kp COMMA  &kp KP_DOT  &kp TAB       &sk LALT
                                     &kp ESC     &kp UP      &kp LEFT      &lt 1 LSHIFT            &sl 2  &kp RIGHT   &kp DOWN      &kp ESC  
                         >;
