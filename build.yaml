@@ -10,4 +10,4 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: seeeduino_xiao_ble
-    shield: hshs46_dongle prospector_adapter
+    shield: hshs46_dongle dongle_screen
