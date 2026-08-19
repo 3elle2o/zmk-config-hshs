@@ -4,8 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: carrefinho                            # <--- add this
-      url-base: https://github.com/carrefinho     # <--- and this
+   remotes:
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,8 +19,9 @@ manifest:
     - name: zmk-leader-key
       remote: urob
       revision: v0.3 # Should match ZMK release.
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main                              # <---
-  self:
+   projects:
+    - name: zmk-dongle-screen
+      remote: janpfischer
+      revision: main 
+      self:
     path: config
