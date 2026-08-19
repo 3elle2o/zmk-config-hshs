@@ -4,10 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-   remotes:
     - name: janpfischer
       url-base: https://github.com/janpfischer
-
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,13 +13,12 @@ manifest:
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: v0.3 # set to same version as zmk above 
+      revision: v0.3 # set to same version as zmk above
     - name: zmk-leader-key
       remote: urob
       revision: v0.3 # Should match ZMK release.
-   projects:
     - name: zmk-dongle-screen
       remote: janpfischer
-      revision: main 
-      self:
+      revision: main
+  self:
     path: config
