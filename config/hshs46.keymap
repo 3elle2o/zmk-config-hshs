@@ -129,9 +129,9 @@
  *                                 |   38  |   39  |  40  |  42  |-   --|  43  | 44    |  45   |  46   |
  */
                         bindings = < 
-&trans       &trans  &kp UP    &kp E    &kp R      &kp T                                                                         &kp Q         &kp U         &kp I      &kp O      &trans      &trans 
-&caps_word   &kp A   &kp S     &kp D    &kp F      &kp G                                                                         &kp H         &kp LEFT      &kp RIGHT  &kp L      &kp P       &kp ESC
-&trans       &kp Z   &kp DOWN  &kp C    &kp V      &kp B    &trans                                                 &trans        &kp N         &kp M         &kp COMMA  &kp DOT    &kp TAB     &trans
+&trans  &trans  &kp UP    &kp E    &kp R      &kp T                                                                    &caps_word    &kp U         &kp I      &kp O      &trans      &trans 
+&kp Q   &kp A   &kp S     &kp D    &kp F      &kp G                                                                         &kp H         &kp LEFT      &kp RIGHT  &kp L      &kp P       &kp ESC
+&trans  &kp Z   &kp DOWN  &kp C    &kp V      &kp B    &trans                                                 &trans        &kp N         &kp M         &kp COMMA  &kp DOT    &kp TAB     &trans
                                        &trans      &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT      &symb_usa 1 3  &sk LEFT_ALT  &sk LEFT_GUI  &trans  
                         >;
                 };
@@ -139,8 +139,8 @@
                 Usa_Media_cp {
                 display-name = "Usa_Media_tcp";
                         bindings = <
-&trans  &trans     &kp W      &trans     &trans     &trans                                                          &trans          &trans            &trans           &trans             &trans         &trans
-&kp Y   &trans     &kp LC(X)  &kp RC(C)  &kp RC(V)  &trans                                                          &trans          &kp J             &kp K            &trans             &trans         &trans
+&trans  &trans     &kp W      &trans     &trans     &trans                                                          &kp Y           &trans            &trans           &trans             &trans         &trans
+&trans  &trans     &kp LC(X)  &kp RC(C)  &kp RC(V)  &trans                                                          &trans          &kp J             &kp K            &trans             &trans         &trans
 &trans  &trans     &kp X      &trans     &trans     &trans  &trans                                       &trans     &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT     &trans    
                                          &trans     &trans  &trans    &trans                   &trans    &trans     &trans  &trans
                         >;
