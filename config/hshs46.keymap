@@ -77,12 +77,6 @@
             layers = <0>;
         };
 
-      ctrlV {
-            timeout-ms = <50>;
-            key-positions = <38 46>;
-            bindings = <&kp LC(V)>;
-            layers = <0>;
-        };
 
         spc {
             timeout-ms = <60>;
