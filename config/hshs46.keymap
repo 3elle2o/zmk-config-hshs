@@ -103,6 +103,13 @@
             key-positions = <18 32>;
         };
 
+      ctrlV {
+            timeout-ms = <50>;
+            key-positions = <38 46>;
+            bindings = <&kp LC(V)>;
+            layers = <0>;
+        };
+
         ent2 {
             bindings = <&kp ENTER>;
             key-positions = <33 34>;
