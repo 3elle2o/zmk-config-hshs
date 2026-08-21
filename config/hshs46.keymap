@@ -148,7 +148,7 @@
                         bindings = <
 &trans  &trans     &kp W      &trans     &trans     &trans                                                          &kp Y   &trans    &trans     &trans      &trans    &trans
 &trans  &trans     &trans     &trans     &trans     &trans                                                          &trans  &kp J     &kp K      &trans      &trans    &trans
-&trans  &trans     &kp X      &trans     &trans     &trans  &trans                                       &trans     &trans  &trans    &trans     &trans      &trans    v,&trans    
+&trans  &trans     &kp X      &trans     &trans     &trans  &trans                                       &trans     &trans  &trans    &trans     &trans      &trans    &trans    
                                          &trans     &trans  &trans    &trans                   &trans    &trans     &trans  &trans
                         >;
                 };
