@@ -20,6 +20,6 @@ manifest:
     - name: zmk-dongle-screen
       remote: 3elle2o
       repo-path: zmk-dongle-screen-occhi
-      revision: e3f4d4bc4c54709ccff07c1bd5c81777302339ee
+      revision: c0b69e539b02b2f188a8658c63fc3be149cd00ea
   self:
     path: config
