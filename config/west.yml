@@ -4,21 +4,22 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: rayreside
-      url-base: https://github.com/rayreside
+    - name: 3elle2o
+      url-base: https://github.com/3elle2o
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 641514a97db345f499dd50b0360e594270f008fe # main @ 2026-08-21
+      revision: 641514a97db345f499dd50b0360e594270f008fe
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: 62c201934711369d50a28df12e1d055d05cb6460 # main, matches zmk above
+      revision: 62c201934711369d50a28df12e1d055d05cb6460
     - name: zmk-leader-key
       remote: urob
-      revision: e894d9afa5164b7fff641db4194fc3d4d6e84bbb # main, matches zmk above
+      revision: e894d9afa5164b7fff641db4194fc3d4d6e84bbb
     - name: zmk-dongle-screen
-      remote: rayreside
-      revision: 2d7d4b0345f7eed14b364a922353d31780bff49b # main @ 2026-08-27 (the "eyes" fork)
+      remote: 3elle2o
+      repo-path: zmk-dongle-screen-occhi
+      revision: e3f4d4bc4c54709ccff07c1bd5c81777302339ee
   self:
     path: config
