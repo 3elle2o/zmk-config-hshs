@@ -177,7 +177,7 @@
         Usa_Media_cp {
             display-name = "Usa_Key";
             bindings = <
-&none  &none  &kp W  &none  &none  &none                              &kp Y  &none  &none  &none  &none  &none
+&none  &none  &kp W  &none  &none  &trans                              &kp Y  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                              &none  &kp J  &kp K  &none  &none  &none
 &none  &none  &kp X  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none  &none
                             &none  &none  &none  &none  &none  &none  &none  &none
