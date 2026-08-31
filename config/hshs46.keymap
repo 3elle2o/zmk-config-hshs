@@ -168,7 +168,7 @@
 
             bindings = <
 &kp C_PREVIOUS  &kp C_NEXT  &kp UP    &kp E  &kp R    &kp T                                                                            &kp Q    &kp U     &kp I      &kp O    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
-&caps_word      &kp A       &kp S     &kp D  &kp F    &kp G                                                                            &kp H    &kp LEFT  &kp RIGHT  &kp L    &kp P            &mau_word
+&caps_word      &kp A       &kp S     &kp D  &kp F    &kp G                                                                            &kp H    &kp LEFT  &kp RIGHT  &kp L    &kp P            &mau_word 4
 &to 2           &kp Z       &kp DOWN  &kp C  &kp V    &kp B    &kp C_PLAY_PAUSE                                          &kp LC(Z)     &kp N    &kp M     &kp COMMA  &kp DOT  &kp LC(A)        &sk RIGHT_WIN
                                              &kp TAB  &kp DEL  &sk RCTRL         &schiftnum 2 LEFT_SHIFT  &symb_usa 1 3  &sk LEFT_ALT  &kp ESC  &sl 5
             >;
