@@ -4,22 +4,21 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    - name: 3elle2o
-      url-base: https://github.com/3elle2o
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho     # <--- and this
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 641514a97db345f499dd50b0360e594270f008fe
+      revision: main
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: 62c201934711369d50a28df12e1d055d05cb6460
+      revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: e894d9afa5164b7fff641db4194fc3d4d6e84bbb
-    - name: zmk-dongle-screen
-      remote: 3elle2o
-      repo-path: zmk-dongle-screen-occhi
-      revision: c0b69e539b02b2f188a8658c63fc3be149cd00ea
+      revision: main
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: feat/new-status-screens           # <---
   self:
     path: config
