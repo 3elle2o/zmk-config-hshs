@@ -10,4 +10,4 @@ include:
   - board: xiao_ble//zmk
     shield: settings_reset
   - board: xiao_ble//zmk
-    shield: hshs46_dongle dongle_screen
+    shield: hshs46_dongle prospector_adapter
