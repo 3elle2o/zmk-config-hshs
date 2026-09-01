@@ -40,14 +40,14 @@
         Fin_DX: Fin_DX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_WIN &sk LEFT_SHIFT &kp RIGHT>;
+            bindings = <&sk LEFT_WIN &sk PG_UP>;
             label = "FIN_DX";
         };
 
         FinSX: FinSX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_WIN &sk LEFT_SHIFT &kp LEFT>;
+            bindings = <&sk LEFT_WIN &sk PAGE_DOWN>;
             label = "FINSX";
         };
 
@@ -68,7 +68,7 @@
         FinUP: FinUP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_WIN &kp HOME>;
+            bindings = <&sk LEFT_WIN &kp UP>;
             label = "FINUP";
         };
 
@@ -77,6 +77,20 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_WIN &sk LEFT_CONTROL &kp T>;
             label = "PRIMPIANO";
+        };
+
+        FinSDx: FinSDx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_WIN &sk LEFT_CONTROL &kp RIGHT>;
+            label = "FINSDX";
+        };
+
+        FinSSx: FinSSx {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_WIN &sk LEFT_CONTROL &kp LEFT>;
+            label = "FINSSX";
         };
     };
 
@@ -217,10 +231,10 @@
 
         Window {
             bindings = <
-&none  &none  &FinUP    &none       &none      &none                              &none  &none   &none    &none  &none  &none
-&none  &none  &none     &PrimPiano  &Win_List  &none                              &none  &FinSX  &Fin_DX  &none  &none  &none
-&none  &none  &FinDOWN  &none       &none      &none  &none                &none  &none  &none   &none    &none  &none  &none
-                                    &none      &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none       &none      &none                              &none  &FinUP    &none    &none    &none    &none
+&none  &none  &none  &PrimPiano  &Win_List  &none                              &none  &FinSX    &Fin_DX  &FinSSx  &FinSDx  &none
+&none  &none  &none  &none       &none      &none  &none                &none  &none  &FinDOWN  &none    &none    &none    &none
+                                 &none      &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
