@@ -140,10 +140,10 @@
  */
 
             bindings = <
-&none  &none  &kp UP    &kp E  &kp R    &kp T                                                               &kp Q          &kp U      &kp I      &kp O    &none         &none
-&none  &kp A  &kp S     &kp D  &kp F    &kp G                                                               &kp H          &kp LEFT   &kp RIGHT  &kp L    &kp P         &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V    &kp B    &kp ESC                                        &tog 4      &kp N          &kp M      &kp COMMA  &kp DOT  &sk LEFT_WIN  &none
-                               &kp TAB  &kp DEL  &sk RCTRL  &schiftnum 2 LSHIFT  &symb_usa 1 3  &caps_word  &sk RIGHT_ALT  &kp LC(Z)
+&none    &none  &kp UP    &kp E  &kp R  &kp T                                                               &kp Q          &kp U     &kp I      &kp O    &none         &none
+&kp TAB  &kp A  &kp S     &kp D  &kp F  &kp G                                                               &kp H          &kp LEFT  &kp RIGHT  &kp L    &kp P         &kp ESC
+&none    &kp Z  &kp DOWN  &kp C  &kp V  &kp B    &tog 2                                         &tog 4      &kp N          &kp M     &kp COMMA  &kp DOT  &sk LEFT_WIN  &none
+                                 &none  &kp DEL  &sk RCTRL  &schiftnum 2 LSHIFT  &symb_usa 1 3  &caps_word  &sk RIGHT_ALT  &none
             >;
         };
 
@@ -160,20 +160,20 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&none   &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT                                &none      &none      &none      &none      &none     &none
-&none   &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA                              &kp EQUAL  &kp SLASH  &kp ASTRK  &kp MINUS  &kp PLUS  &none
-&trans  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &none                &none  &none      &none      &kp COMMA  &kp DOT    &none     &none
-                                           &trans        &none      &none  &none  &none  &none  &none      &none
+&none   &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none                                       &none      &kp PLUS       &kp MINUS  &none  &none  &none
+&none   &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none                                       &kp EQUAL  &mt DOT COMMA  &kp N0     &none  &none  &none
+&trans  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none          &trans                &none  &none      &kp SLASH      &kp ASTRK  &none  &none  &none
+                                           &none         &mt DOT COMMA  &kt N0  &none  &none  &none  &none      &none
             >;
         };
 
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none      &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp DOLLAR                                     &kp EXCL   &kp COLON  &kp SEMI  &kp QUESTION  &none            &none
-&none  &none      &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS                                       &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER     &none            &none
-&none  &kp CARET  &kp PIPE          &kp BSLH         &kp HASH           &kp F2      &passpc                &passfirma  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT   &kp PRINTSCREEN  &none
-                                                     &none              &none       &none    &none  &none  &none       &none      &none
+&none  &none       &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp F4                                       &none      &kp COLON  &kp SEMI  &none        &none            &none
+&none  &kp DOLLAR  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS                                     &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &kp EXCL         &kp QMARK
+&none  &kp CARET   &kp PIPE          &kp BSLH         &kp HASH           &kp F2    &passpc                &passfirma  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none
+                                                      &none              &none     &none    &none  &none  &none       &none      &none
             >;
         };
 
