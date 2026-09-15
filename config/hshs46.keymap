@@ -121,17 +121,15 @@
             layers = <0>;
         };
 
-        ctrlV {
-            timeout-ms = <50>;
-            key-positions = <38 45>;
-            bindings = <&kp LC(V)>;
-            layers = <0>;
-        };
-
         ent2 {
             bindings = <&kp ENTER>;
             key-positions = <33 34>;
             timeout-ms = <50>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <3 4>;
         };
     };
 
@@ -173,16 +171,16 @@
 &none   &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none                                       &none      &kp PLUS       &kp MINUS  &none  &none  &none
 &none   &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none                                       &kp EQUAL  &mt DOT COMMA  &kp N0     &none  &none  &none
 &trans  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none          &trans                &none  &none      &kp SLASH      &kp ASTRK  &none  &none  &none
-                                           &none         &mt DOT COMMA  &kt N0  &none  &none  &none  &none      &none
+                                           &none         &mt DOT COMMA  &kp N0  &none  &none  &none  &none      &none
             >;
         };
 
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none       &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp F4                                &passpc    &kp COLON  &kp SEMI  &passfirma   &none            &none
-&none  &kp DOLLAR  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS                              &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &kp EXCL         &kp QMARK
-&none  &kp CARET   &kp PIPE          &kp BSLH         &kp HASH           &kp F2    &none                &none  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none
+&none  &none       &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp F4                                &passpc    &kp COLON  &kp SEMI  &passfirma   &none         &none
+&none  &kp DOLLAR  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS                              &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER    &kp EXCL      &kp PRINTSCREEN
+&none  &kp CARET   &kp PIPE          &kp BSLH         &kp HASH           &kp F2    &none                &none  &kp SLASH  &kp AT     &kp HOME  &kp PERCENT  &kp QUESTION  &none
                                                       &none              &none     &none  &none  &none  &none  &none      &none
             >;
         };
