@@ -168,10 +168,10 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&none          &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none                               &none      &kp PLUS       &kp MINUS  &none  &none  &none
-&mt DOT COMMA  &none  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none                               &kp EQUAL  &mt DOT COMMA  &kp N0     &none  &none  &none
-&trans         &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &trans                &none  &none      &kp SLASH      &kp ASTRK  &none  &none  &none
-                                                  &trans        &none  &none   &none  &none  &none  &none      &trans
+&none          &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none                               &none      &kp PLUS       &kp MINUS  &none  &none  &none
+&mt DOT COMMA  &kp N0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none                               &kp EQUAL  &mt DOT COMMA  &kp N0     &none  &none  &none
+&trans         &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &trans                &none  &none      &kp SLASH      &kp ASTRK  &none  &none  &none
+                                                   &trans        &none  &none   &none  &none  &none  &none      &trans
             >;
         };
 
