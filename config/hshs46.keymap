@@ -176,9 +176,9 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none       &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp F4                                &passpc  &kp COLON  &kp SEMI  &kp QUESTION  &none        &kp PRINTSCREEN
+&none  &none       &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp F4                                &passpc  &kp COLON  &kp SEMI  &kp QUESTION  &none        &none
 &none  &kp DOLLAR  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS                              &kp DQT  &kp LPAR   &kp RPAR  &kp UNDER     &kp PERCENT  &passfirma
-&none  &none       &kp PIPE          &kp BSLH         &kp HASH           &kp F2    &none                &none  &kp AT   &kp SLASH  &kp HOME  &kp EXCL      &none        &none
+&none  &none       &kp PIPE          &kp BSLH         &kp HASH           &kp F2    &none                &none  &kp AT   &kp SLASH  &kp HOME  &kp EXCL      &none        &kp PRINTSCREEN
                                                       &none              &none     &none  &none  &none  &none  &none    &none
             >;
         };
