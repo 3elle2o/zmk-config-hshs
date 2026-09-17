@@ -126,7 +126,7 @@
         };
 
         del {
-            bindings = <&kp TAB>;
+            bindings = <&kp DEL>;
             key-positions = <6 18>;
         };
     };
