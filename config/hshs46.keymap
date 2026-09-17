@@ -121,7 +121,7 @@
         };
 
         esc {
-            bindings = <&kp DEL>;
+            bindings = <&kp ESC>;
             key-positions = <5 17>;
         };
 
