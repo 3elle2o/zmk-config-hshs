@@ -121,12 +121,12 @@
         };
 
         esc {
-            bindings = <&tog 2>;
+            bindings = <&kp ESC>;
             key-positions = <5 17>;
         };
 
         del {
-            bindings = <&tog 4>;
+            bindings = <&kp DELETE>;
             key-positions = <4 16>;
         };
 
