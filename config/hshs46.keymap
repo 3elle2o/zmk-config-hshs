@@ -144,9 +144,19 @@
             key-positions = <17 29>;
         };
 
-        win {
-            bindings = <&kp RIGHT_WIN>;
+        esc2 {
+            bindings = <&kp ESC>;
             key-positions = <6 18>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <18 32>;
+        };
+
+        del2 {
+            bindings = <&kp DEL>;
+            key-positions = <7 19>;
         };
     };
 
