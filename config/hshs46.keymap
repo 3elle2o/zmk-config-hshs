@@ -144,11 +144,6 @@
             key-positions = <28 16>;
         };
 
-        esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <9 21>;
-        };
-
         ctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <17 5>;
@@ -156,7 +151,7 @@
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <9 21>;
+            key-positions = <6 18>;
         };
     };
 
