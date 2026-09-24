@@ -145,13 +145,13 @@
         };
 
         ctrl {
-            bindings = <&kp LEFT_CONTROL>;
+            bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <17 5>;
         };
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <6 18>;
+            key-positions = <9 21>;
         };
     };
 
