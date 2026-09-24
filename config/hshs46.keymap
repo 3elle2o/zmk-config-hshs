@@ -64,10 +64,10 @@
             hold-trigger-key-positions = <41>;
         };
 
-        usa_caps: usa_caps {
+        caps_mouse: caps_mouse {
             compatible = "zmk,behavior-hold-tap";
-            label = "USA_CAPS";
-            bindings = <&caps_word>, <&sl>;
+            label = "CAPS_MOUSE";
+            bindings = <&tog>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -170,10 +170,10 @@
  */
 
             bindings = <
-&none  &none  &kp UP    &kp E  &kp R  &kp T                                                                             &kp Q  &kp U     &kp I      &kp O    &none         &none
-&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                                             &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P         &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &tog 2                                                      &tog 4         &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
-                               &none  &none  &ctrlWin LEFT_WIN LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &usa_caps 0 1  &none  &none
+&none  &none  &kp UP    &kp E  &kp R  &kp T                                                                 &kp Q  &kp U     &kp I      &kp O    &none         &none
+&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                                 &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P         &none
+&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &kp LEFT_WIN                                  &caps_mouse 4 0  &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
+                               &none  &none  &sk LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &sl 1            &none  &none
             >;
         };
 
