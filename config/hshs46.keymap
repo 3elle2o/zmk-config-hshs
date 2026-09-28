@@ -131,7 +131,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <2 14>;
+            key-positions = <19 33>;
         };
 
         del {
