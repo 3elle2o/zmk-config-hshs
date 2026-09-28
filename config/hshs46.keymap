@@ -119,7 +119,7 @@
 
         apo {
             bindings = <&kp APOS>;
-            key-positions = <19 20 21>;
+            key-positions = <19 33>;
             layers = <0>;
         };
 
