@@ -117,12 +117,6 @@
             bindings = <&kp ENTER>;
         };
 
-        apo {
-            bindings = <&kp APOS>;
-            key-positions = <19 33>;
-            layers = <0>;
-        };
-
         ent2 {
             bindings = <&kp ENTER>;
             key-positions = <33 34>;
@@ -131,7 +125,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <34 20>;
+            key-positions = <29 17>;
         };
 
         del {
