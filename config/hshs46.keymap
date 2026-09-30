@@ -119,7 +119,7 @@
 
         apo {
             bindings = <&kp APOS>;
-            key-positions = <19 7>;
+            key-positions = <19 33>;
             layers = <0>;
         };
 
@@ -131,20 +131,20 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <19 33>;
+            key-positions = <34 20>;
         };
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <4 16>;
+            key-positions = <16 28>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <28 16>;
+            key-positions = <27 15>;
         };
 
-        ctrl {
+        ctrlshift {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <17 5>;
         };
