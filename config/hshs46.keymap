@@ -189,10 +189,10 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none            &mt LESS_THAN GREATER_THAN  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp AMPS                               &kp AT    &kp COLON  &kp QUESTION  &kp F2     &none            &none
-&none  &mt DOLLAR HASH  &kp HOME                    &kp DQT                      &kp APOS                       &kp SLASH                              &passpc   &kp LPAR   &kp RPAR      &kp UNDER  &passfirma       &none
-&none  &mt PIPE BSLH    &none                       &none                        &none                          &none      &none                &none  &kp HOME  &kp SEMI   &kp EXCL      &kp F4     &kp PRINTSCREEN  &none
-                                                                                 &none                          &none      &none  &none  &none  &none  &none     &none
+&none  &none            &mt LESS_THAN GREATER_THAN  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp AMPS                               &kp AT   &kp COLON  &kp QUESTION  &kp F2     &none            &none
+&none  &mt DOLLAR HASH  &kp HOME                    &kp DQT                      &kp APOS                       &kp SLASH                              &passpc  &kp LPAR   &kp RPAR      &kp UNDER  &passfirma       &none
+&none  &mt PIPE BSLH    &none                       &none                        &none                          &none      &none                &none  &none    &kp SEMI   &kp EXCL      &kp F4     &kp PRINTSCREEN  &none
+                                                                                 &none                          &none      &none  &none  &none  &none  &none    &none
             >;
         };
 
