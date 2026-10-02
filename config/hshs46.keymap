@@ -12,7 +12,6 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
@@ -204,10 +203,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&none  &none  &mmv MOVE_UP    &none  &none  &none                                                      &none  &none           &none            &none  &none  &none
-&none  &none  &none           &none  &none  &none                                                      &none  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &none  &none  &none
-&none  &none  &mmv MOVE_DOWN  &none  &none  &none  &mkp MCLK                                &trans     &none  &none           &none            &none  &none  &none
-                                     &none  &none  &msc SCRL_UP  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK  &none  &none
+&none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I      &kp O       &none          &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K      &kp L       &kp P          &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp RIGHT_ALT  &none
+                            &none  &none  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &none  &none
             >;
         };
     };
