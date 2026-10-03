@@ -179,7 +179,7 @@
             bindings = <
 &none  &none  &kp UP    &kp E  &kp R  &kp T                                                               &kp Q  &kp U     &kp I      &kp O    &none         &none
 &none  &kp A  &kp S     &kp D  &kp F  &kp G                                                               &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P         &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &kp LEFT_WIN                                  &tog_alte      &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
+&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &sk LEFT_WIN                                  &tog_alte      &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
                                &none  &none  &sk LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &usa_caps 0 1  &none  &none
             >;
         };
@@ -217,9 +217,9 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I          &kp O             &none          &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K          &kp L             &kp P          &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp RIGHT_ALT  &none
+&none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I                &kp O                 &none          &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K                &kp L                 &kp P          &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &mt COMMA SEMICOLON  &mt DOT SINGLE_QUOTE  &kp RIGHT_ALT  &none
                             &none  &none  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &none  &none
             >;
         };
