@@ -22,7 +22,7 @@
     flavor = "tap-preferred";
 };
 
-#define NAV 1   // numero del layer da attivare
+#define MAU 4   // numero del layer da attivare
 
 / {
     macros {
@@ -32,7 +32,7 @@
             wait-ms = <0>;
             tap-ms = <30>;
             bindings
-                = <&macro_tap &tog NAV>
+                = <&macro_tap &tog MAU>
                 , <&macro_tap &kp LA(E)>
                 ;
         };
@@ -182,7 +182,7 @@
             bindings = <
 &none  &none  &kp UP    &kp E  &kp R  &kp T                                                                 &kp Q  &kp U     &kp I      &kp O    &none         &none
 &none  &kp A  &kp S     &kp D  &kp F  &kp G                                                                 &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P         &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &kp LEFT_WIN                                  &tog_alte 4   &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
+&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &kp LEFT_WIN                                  &tog_alte    &kp N  &kp M     &kp COMMA  &kp DOT  &sk LEFT_ALT  &none
                                &none  &none  &sk LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &sl 1            &none  &none
             >;
         };
