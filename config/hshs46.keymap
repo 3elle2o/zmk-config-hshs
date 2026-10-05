@@ -180,9 +180,9 @@
  */
 
             bindings = <
-&none  &none  &kp UP    &kp E  &kp R  &kp T                                                               &kp Q  &kp U     &kp I      &kp O    &none                  &none
-&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                               &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P                  &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &sk LEFT_WIN                                  &sk RIGHT_ALT  &kp N  &kp M     &kp COMMA  &kp DOT  &mt SINGLE_QUOTE SEMI  &none
+&none  &none  &kp UP    &kp E  &kp R  &kp T                                                               &kp Q  &kp U     &kp I      &kp O    &none              &none
+&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                               &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P              &none
+&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &sk LEFT_WIN                                  &sk RIGHT_ALT  &kp N  &kp M     &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
                                &none  &none  &sk LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &usa_caps 0 1  &none  &none
             >;
         };
@@ -210,19 +210,19 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none            &mt LESS_THAN GREATER_THAN  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp AMPS                              &kp AT    &kp DOUBLE_QUOTES  &kp QUESTION  &kp F2     &none            &none
-&none  &mt DOLLAR HASH  &none                       &kp SEMICOLON                &kp COLON                      &none                                 &passpc   &kp LPAR           &kp RPAR      &kp UNDER  &passfirma       &none
-&none  &mt PIPE BSLH    &none                       &none                        &none                          &none     &none                &none  &kp HOME  &kp SLASH          &kp EXCL      &kp F4     &kp PRINTSCREEN  &none
-                                                                                 &none                          &none     &none  &none  &none  &none  &none     &none
+&none  &none  &kp LESS_THAN     &kp LEFT_BRACE   &kt LEFT_BRACKET   &kp AMPS                                &kp AT    &kp DOUBLE_QUOTES  &kp COLON  &kp F2     &none            &none
+&none  &none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp HASH                                &passpc   &kp LPAR           &kp RPAR   &kp UNDER  &passfirma       &none
+&none  &none  &kp CARET         &kp PIPE         &kp BSLH           &kp DOLLAR  &none                &none  &kp HOME  &kp SLASH          &kp SEMI   &kp F4     &kp PRINTSCREEN  &none
+                                                 &none              &none       &none  &none  &none  &none  &none     &none
             >;
         };
 
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I   &kp O   &none   &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K   &kp L   &kp P   &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &trans  &trans  &trans  &none
+&none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I   &kp O   &none          &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K   &kp L   &kp P          &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &trans  &trans  &mt APOS SEMI  &none
                             &none  &none  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &none  &none
             >;
         };
