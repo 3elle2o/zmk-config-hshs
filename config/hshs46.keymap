@@ -105,6 +105,18 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        shift_symb: shift_symb {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            display-name = "SCHIFTNUM";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            label = "SHIFT_SYMB";
+            bindings = <&kp>, <&sl>;
+
+            hold-trigger-key-positions = <42>;
+        };
     };
 
     combos {
@@ -180,10 +192,10 @@
  */
 
             bindings = <
-&none  &none  &kp UP    &kp E  &kp R  &kp T                                                               &kp Q  &kp U     &kp I      &kp O    &none              &none
-&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                               &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P              &none
-&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &sk LEFT_WIN                                  &sk RIGHT_ALT  &kp N  &kp M     &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                               &none  &none  &sk LEFT_CONTROL  &schiftnum 2 LSHIFT  &sl 3  &usa_caps 0 1  &none  &none
+&none  &none  &kp UP    &kp E  &kp R  &kp T                                                                                       &kp Q  &kp U     &kp I      &kp O    &none              &none
+&none  &kp A  &kp S     &kp D  &kp F  &kp G                                                                                       &kp H  &kp LEFT  &kp RIGHT  &kp L    &kp P              &none
+&none  &kp Z  &kp DOWN  &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N  &kp M     &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                               &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &usa_caps 0 1  &none  &none
             >;
         };
 
@@ -223,7 +235,7 @@
 &none  &none  &kp W  &kp E  &kp R  &kp T                                                                        &kp Q  &kp U  &kp I   &kp O   &none          &none
 &none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H  &kp J  &kp K   &kp L   &kp P          &none
 &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_ALT                                       &trans             &kp N  &kp M  &trans  &trans  &mt APOS SEMI  &none
-                            &none  &none  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &none  &none
+                            &none  &none  &sk LEFT_CONTROL  &sk RIGHT_SHIFT  &sk LEFT_SHIFT  &sk RIGHT_CONTROL  &none  &none
             >;
         };
     };
