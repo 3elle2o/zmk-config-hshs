@@ -169,6 +169,11 @@
             bindings = <&kp APOS>;
             key-positions = <19 33>;
         };
+
+        mouse {
+            bindings = <&tog 4>;
+            key-positions = <22 36>;
+        };
     };
 
     keymap {
@@ -186,10 +191,10 @@
  */
 
             bindings = <
-&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                        &mt Y Q  &kp U       &kp I          &kp O           &none              &none
-&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                        &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
-&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT   &kp N    &kp M       &mt DOT COMMA  &mt SEMI COMMA  &mt EXCL QUESTION  &none
-                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &schiftnum 4 0  &none    &none
+&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U       &kp I          &kp O           &none              &none
+&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                       &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
+&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M       &mt DOT COMMA  &mt SEMI COMMA  &mt EXCL QUESTION  &none
+                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none    &none
             >;
         };
 
