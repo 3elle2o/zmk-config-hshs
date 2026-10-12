@@ -70,11 +70,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             display-name = "SCHIFTNUM";
-            bindings = <&mo>, <&sk>;
+            bindings = <&tog>, <&caps_word>;
 
             tapping-term-ms = <150>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <41>;
+            flavor = "tap-preferred";
         };
 
         usa_caps: usa_caps {
@@ -187,10 +186,10 @@
  */
 
             bindings = <
-&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U       &kp I          &kp O           &none              &none
-&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                       &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
-&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M       &mt DOT COMMA  &mt SEMI COMMA  &mt EXCL QUESTION  &none
-                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &lt 4 CAPS     &none    &none
+&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                        &mt Y Q  &kp U       &kp I          &kp O           &none              &none
+&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                        &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
+&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT   &kp N    &kp M       &mt DOT COMMA  &mt SEMI COMMA  &mt EXCL QUESTION  &none
+                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &schiftnum 4 0  &none    &none
             >;
         };
 
