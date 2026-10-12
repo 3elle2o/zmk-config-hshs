@@ -187,9 +187,9 @@
  */
 
             bindings = <
-&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U       &kp I        &kp O    &none              &none
-&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                       &kp H    &mt J LEFT  &mt K RIGHT  &kp L    &kp P              &none
-&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M       &kp COMMA    &kp DOT  &mt EXCL QUESTION  &none
+&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U       &kp I          &kp O           &none              &none
+&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                       &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
+&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M       &mt DOT COMMA  &mt SEMI COMMA  &mt EXCL QUESTION  &none
                                      &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &lt 4 CAPS     &none    &none
             >;
         };
@@ -217,9 +217,9 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none  &kp LESS_THAN     &kp LEFT_BRACE   &kt LEFT_BRACKET   &kp AMPS                                &kp AT    &kp DOUBLE_QUOTES  &kp COLON  &kp F2     &none            &none
-&none  &none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp HASH                                &passpc   &kp LPAR           &kp RPAR   &kp UNDER  &passfirma       &none
-&none  &none  &kp CARET         &kp PIPE         &kp BSLH           &kp DOLLAR  &none                &none  &kp HOME  &kp SLASH          &kp SEMI   &kp F4     &kp PRINTSCREEN  &none
+&none  &none  &kp LESS_THAN     &kp LEFT_BRACE   &kt LEFT_BRACKET   &kp AMPS                                &kp AT    &kp DOUBLE_QUOTES  &none     &kp F2     &none            &none
+&none  &none  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp HASH                                &passpc   &kp LPAR           &kp RPAR  &kp UNDER  &passfirma       &none
+&none  &none  &kp CARET         &kp PIPE         &kp BSLH           &kp DOLLAR  &none                &none  &kp HOME  &kp SLASH          &none     &kp F4     &kp PRINTSCREEN  &none
                                                  &none              &none       &none  &none  &none  &none  &none     &none
             >;
         };
