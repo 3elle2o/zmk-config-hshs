@@ -116,6 +116,16 @@
 
             hold-trigger-key-positions = <42>;
         };
+
+        frecce_maiuscole: frecce_maiuscole {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FRECCE_MAIUSCOLE";
+            bindings = <&mo>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -163,6 +173,7 @@
         ctrlshift {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <5 17>;
+            layers = <1>;
         };
 
         Apostrovo {
@@ -191,20 +202,20 @@
  */
 
             bindings = <
-&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U       &kp I          &kp O           &none              &none
-&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                       &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
-&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M       &mt DOT COMMA  &mt SEMI COLON  &mt EXCL QUESTION  &none
-                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none    &none
+&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                               &mt Y Q  &kp U       &kp I          &kp O           &none              &none
+&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                               &kp H    &mt J LEFT  &mt K RIGHT    &kp L           &kp P              &none
+&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT          &kp N    &kp M       &mt DOT COMMA  &mt SEMI COLON  &mt EXCL QUESTION  &none
+                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &frecce_maiuscole 1 0  &none    &none
             >;
         };
 
-        Usa_Media_cp {
-            display-name = "Usa_Key";
+        Frecce {
+            display-name = "Frecce";
             bindings = <
-&none  &none  &kp W  &none       &none      &none                              &kp Y  &none  &none  &none  &none  &none
-&none  &none  &none  &PrimPiano  &Win_List  &none                              &none  &kp J  &kp K  &none  &none  &none
-&none  &none  &kp X  &none       &none      &none  &none                &none  &none  &none  &none  &none  &none  &none
-                                 &none      &none  &none  &none  &none  &none  &none  &none
+&trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &kp DOWN  &kp UP  &trans                                  &trans  &kp LEFT  &kp RIGHT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans  &trans                  &trans  &trans  &trans    &trans     &trans  &trans  &trans
+                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
