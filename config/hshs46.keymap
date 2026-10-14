@@ -157,17 +157,12 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <34 20>;
+            key-positions = <32 18>;
         };
 
         del {
             bindings = <&kp DELETE>;
             key-positions = <16 28>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <27 15>;
         };
 
         ctrlshift {
@@ -184,6 +179,11 @@
         mouse {
             bindings = <&tog_alte>;
             key-positions = <22 36>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <17 29>;
         };
     };
 
@@ -232,10 +232,10 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none  &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &kp DOUBLE_QUOTES  &none     &kp F2     &none            &none
-&none  &none  &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &passpc   &kp LPAR           &kp RPAR  &kp UNDER  &passfirma       &none
-&none  &none  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH          &none     &kp F4     &kp PRINTSCREEN  &none
-                                   &none          &none     &none  &none  &none  &none  &none     &none
+&none  &none       &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &kp DOUBLE_QUOTES  &none     &kp F2     &none            &none
+&none  &Win_List   &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &passpc   &kp LPAR           &kp RPAR  &kp UNDER  &passfirma       &none
+&none  &PrimPiano  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH          &none     &kp F4     &kp PRINTSCREEN  &none
+                                        &none          &none     &none  &none  &none  &none  &none     &none
             >;
         };
 
