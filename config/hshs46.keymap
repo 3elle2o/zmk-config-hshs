@@ -174,6 +174,7 @@
         Apostrovo {
             bindings = <&kp APOS>;
             key-positions = <19 33>;
+            layers = <0>;
         };
 
         mouse {
@@ -184,6 +185,12 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <17 29>;
+        };
+
+        virgolette {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 33>;
+            layers = <3>;
         };
     };
 
@@ -202,10 +209,10 @@
  */
 
             bindings = <
-&none  &none  &mt W UP_ARROW  &kp E  &kp R  &kp T                                                                                               &mt Y Q  &kp U  &kp I          &kp O           &none              &none
-&none  &kp A  &kp S           &kp D  &kp F  &kp G                                                                                               &kp H    &kp J  &kp K          &kp L           &kp P              &none
-&none  &kp Z  &mt X DOWN      &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT          &kp N    &kp M  &mt DOT COMMA  &mt SEMI COLON  &mt EXCL QUESTION  &none
-                                     &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &frecce_maiuscole 1 0  &none    &none
+&none  &none  &kp W  &kp E  &kp R  &kp T                                                                                               &mt Y Q  &kp U  &kp I      &kp O    &none              &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G                                                                                               &kp H    &kp J  &kp K      &kp L    &kp P              &none
+&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT          &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                            &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &frecce_maiuscole 1 0  &none    &none
             >;
         };
 
@@ -232,10 +239,10 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none  &none       &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &kp DOUBLE_QUOTES  &none     &kp F2     &none            &none
-&none  &Win_List   &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &passpc   &kp LPAR           &kp RPAR  &kp UNDER  &passfirma       &none
-&none  &PrimPiano  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH          &none     &kp F4     &kp PRINTSCREEN  &none
-                                        &none          &none     &none  &none  &none  &none  &none     &none
+&none  &none       &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                                &kp AT    &none      &none      &none      &none            &none
+&none  &Win_List   &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                  &passpc   &kp LPAR   &kp RPAR   &kp UNDER  &passfirma       &none
+&none  &PrimPiano  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &kp F2                &kp F4  &kp HOME  &kp SLASH  &kp COMMA  &kp DOT    &kp PRINTSCREEN  &none
+                                        &none          &none     &none   &none  &none  &none   &none     &none
             >;
         };
 
