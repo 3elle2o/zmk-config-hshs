@@ -186,7 +186,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <28 16>;
-            layers = <0 2>;
+            layers = <0 2 3>;
         };
 
         virgolette {
