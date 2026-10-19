@@ -178,11 +178,6 @@
             layers = <0>;
         };
 
-        mouse {
-            bindings = <&tog_alte>;
-            key-positions = <32 33>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <28 16>;
@@ -211,10 +206,10 @@
  */
 
             bindings = <
-&none  &none  &kp W  &kp E  &kp R  &kp T                                                                                       &kp Q  &kp U  &kp I      &kp O    &none              &none
-&kp Y  &kp A  &kp S  &kp D  &kp F  &kp G                                                                                       &kp H  &kp J  &kp K      &kp L    &kp P              &mo 1
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N  &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                            &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none  &none
+&none   &none  &kp W  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U  &kp I      &kp O    &none              &none
+&tog 4  &kp A  &kp S  &kp D  &kp F  &kp G                                                                                       &kp H    &kp J  &kp K      &kp L    &kp P              &mo 1
+&none   &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                             &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none    &none
             >;
         };
 
