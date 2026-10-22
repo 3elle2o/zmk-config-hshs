@@ -27,6 +27,16 @@
     };
 };
 
+/ {
+    behaviors {
+        mouse_word: mouse_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <CAPSLOCK MOVE_UP MOVE_LEFT MOVE_DOWN MOVE_RIGHT LCLK RCLK MCLK>;
+        };
+    };
+};
+
 &caps_word { continue-list = <SPACE>; };
 
 &mt {
@@ -139,12 +149,6 @@
             flavor = "balanced";
         };
 
-        mouse_word: mouse_word {
-            compatible = "zmk,behavior-caps-word";
-            label = "MOUSE_WORD";
-            #binding-cells = <0>;
-            continue-list = <CAPSLOCK MOVE_UP MOVE_LEFT MOVE_DOWN MOVE_RIGHT LCLK RCLK MCLK>;
-        };
     };
 
     combos {
