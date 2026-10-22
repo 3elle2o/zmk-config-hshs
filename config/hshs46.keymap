@@ -138,6 +138,13 @@
             tapping-term-ms = <150>;
             flavor = "balanced";
         };
+
+        mouse_word: mouse_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "MOUSE_WORD";
+            #binding-cells = <0>;
+            continue-list = <CAPS GLOBE>;
+        };
     };
 
     combos {
@@ -228,10 +235,10 @@
  */
 
             bindings = <
-&none         &none  &kp W  &kp E  &kp R      &kp T                                                                                           &mt Y Q         &kp U            &kp I      &kp O    &none              &none
-&kp CAPSLOCK  &kp A  &kp S  &kp D  &kp F      &kp G                                                                                           &kp H           &kp J            &kp K      &kp L    &kp P              &nav_word 1
-&none         &kp Z  &kp X  &kp C  &kp V      &kp B      &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N           &kp M            &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                                   &mkp RCLK  &mkp LCLK  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &msc SCRL_LEFT  &msc SCRL_RIGHT
+&none      &none  &kp W  &kp E  &kp R      &kp T                                                                                              &mt Y Q  &kp U  &kp I      &kp O    &none              &none
+&mkp LCLK  &kp A  &kp S  &kp D  &kp F      &kp G                                                                                              &kp H    &kp J  &kp K      &kp L    &kp P              &nav_word 1
+&none      &kp Z  &kp X  &kp C  &kp V      &kp B         &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                                &mkp LCLK  &kp CAPSLOCK  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none    &none
             >;
         };
 
