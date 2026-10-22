@@ -12,6 +12,7 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
@@ -222,10 +223,10 @@
  */
 
             bindings = <
-&none      &none  &kp W  &kp E  &kp R  &kp T                                                                                       &mt Y Q  &kp U  &kp I      &kp O    &none              &none
-&kp LA(E)  &kp A  &kp S  &kp D  &kp F  &kp G                                                                                       &kp H    &kp J  &kp K      &kp L    &kp P              &nav_word 1
-&none      &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                                &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &none    &none
+&none      &none  &kp W  &kp E  &kp R     &kp T                                                                                           &mt Y Q    &kp U      &kp I      &kp O    &none              &none
+&kp LA(E)  &kp A  &kp S  &kp D  &kp F     &kp G                                                                                           &kp H      &kp J      &kp K      &kp L    &kp P              &nav_word 1
+&none      &kp Z  &kp X  &kp C  &kp V     &kp B      &sk LEFT_WIN                                                          &sk RIGHT_ALT  &kp N      &kp M      &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                                &kp CAPS  &mkp MCLK  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &shift_symb LEFT_SHIFT 3  &caps_word     &mkp RCLK  &mkp LCLK
             >;
         };
 
