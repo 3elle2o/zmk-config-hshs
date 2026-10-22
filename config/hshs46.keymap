@@ -143,7 +143,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "MOUSE_WORD";
             #binding-cells = <0>;
-            continue-list = <CAPS GLOBE>;
+            continue-list = <CAPSLOCK MOVE_UP MOVE_LEFT MOVE_DOWN MOVE_RIGHT LCLK RCLK MCLK>;
         };
     };
 
