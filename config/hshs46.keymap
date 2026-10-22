@@ -173,7 +173,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <18 6>;
+            key-positions = <29 17>;
             layers = <0 2 1>;
         };
 
