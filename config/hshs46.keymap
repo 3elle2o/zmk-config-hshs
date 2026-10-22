@@ -206,6 +206,11 @@
             key-positions = <19 33>;
             layers = <3>;
         };
+
+        middleclick {
+            bindings = <&mkp MCLK>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
