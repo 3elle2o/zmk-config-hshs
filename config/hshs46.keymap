@@ -149,6 +149,14 @@
             flavor = "balanced";
         };
 
+        scorri_clicca: scorri_clicca {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCORRI_CLICCA";
+            #binding-cells = <2>;
+            bindings = <&mkp>, <&kp>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     combos {
@@ -244,10 +252,10 @@
  */
 
             bindings = <
-&none      &none  &kp W  &kp E  &kp R      &kp T                                                                           &mt Y Q      &kp U   &kp I      &kp O    &none              &none
-&mkp LCLK  &kp A  &kp S  &kp D  &kp F      &kp G                                                                           &kp H        &kp J   &kp K      &kp L    &kp P              &nav_word 1
-&none      &kp Z  &kp X  &kp C  &kp V      &kp B         &sk LEFT_WIN                                       &sk RIGHT_ALT  &kp N        &kp M   &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                                &mkp RCLK  &kp CAPSLOCK  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &sl 3  &caps_word     &mouse_word 4  &tog 2
+&none        &none  &kp W  &kp E  &kp R  &kp T                                                                    &mt Y Q  &kp U  &kp I      &kp O    &none              &none
+&mouse_word  &kp A  &kp S  &kp D  &kp F  &kp G                                                                    &kp H    &kp J  &kp K      &kp L    &kp P              &nav_word 1
+&none        &kp Z  &kp X  &kp C  &kp V  &kp B  &sk LEFT_WIN                                       &sk RIGHT_ALT  &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                                  &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &sl 3  &caps_word     &none    &none
             >;
         };
 
@@ -284,10 +292,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &kp W  &kp E  &kp R   &kp T                                   &kp Q   &kp U           &mmv MOVE_RIGHT    &kp O            &trans  &trans
-&trans  &kp A   &kp S  &kp D  &kp F   &kp G                                   &kp H   &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &kp P   &trans
-&trans  &kp Z   &kp X  &kp C  &kp V   &kp B   &trans                  &trans  &kp N   &kp M           &trans          &trans           &trans  &trans
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp W  &kp E  &kp R   &kp T                                                 &kp Q   &kp U         &mmv MOVE_RIGHT  &kp O           &trans     &trans
+&trans  &kp A   &kp S  &kp D  &kp F   &kp G                                                 &kp H   &mmv MOVE_UP  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &kp P      &scorri_clicca MCLK CAPSLOCK
+&trans  &kp Z   &kp X  &kp C  &kp V   &kp B   &trans                             &trans     &kp N   &kp M         &trans           &trans          &mkp RCLK  &trans
+                              &trans  &trans  &trans  &kp LEFT_SHIFT  &mkp LCLK  &mkp MCLK  &trans  &trans
             >;
         };
     };
