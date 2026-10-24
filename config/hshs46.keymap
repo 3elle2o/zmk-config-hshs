@@ -297,9 +297,9 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &kp W  &kp E  &kp R  &kp T                                                      &kp Q  &kp U         &mmv MOVE_RIGHT  &kp O           &trans  &trans
-&trans  &kp A   &kp S  &kp D  &kp F  &kp G                                                      &kp H  &mmv MOVE_UP  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &kp P   &trans
-&trans  &kp Z   &kp X  &kp C  &kp V  &kp B  &trans                                &trans        &kp N  &kp M         &trans           &trans          &trans  &trans
+&trans  &trans  &kp W  &kp E  &kp R  &kp T                                                      &kp Q  &kp U           &mmv MOVE_UP    &kp O            &trans  &trans
+&trans  &kp A   &kp S  &kp D  &kp F  &kp G                                                      &kp H  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp P   &trans
+&trans  &kp Z   &kp X  &kp C  &kp V  &kp B  &trans                                &trans        &kp N  &kp M           &trans          &trans           &trans  &trans
                               &none  &none  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK  &msc SCRL_UP  &none  &none
             >;
         };
