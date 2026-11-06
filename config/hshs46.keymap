@@ -225,12 +225,6 @@
             layers = <0>;
         };
 
-        virgolette {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 33>;
-            layers = <3>;
-        };
-
         shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <41 40>;
@@ -238,7 +232,7 @@
         };
 
         frecce {
-            bindings = <&nav_word>;
+            bindings = <&nav_word 1>;
             key-positions = <20 34>;
         };
     };
