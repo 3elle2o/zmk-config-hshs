@@ -31,35 +31,11 @@
     };
 };
 
-/ {
-    behaviors {
-        mouse_word: mouse_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <CAPSLOCK MOVE_UP MOVE_LEFT MOVE_DOWN MOVE_RIGHT LCLK RCLK MCLK>;
-        };
-    };
-};
-
 &caps_word { continue-list = <SPACE>; };
 
 &mt {
     tapping-term-ms = <150>;
     flavor = "tap-preferred";
-};
-
-#define MAU 4   // numero del layer da attivare
-
-/ {
-    macros {
-        tog_alte: tog_alte {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <30>;
-            bindings = <&macro_tap>, <&tog 0>, <&macro_tap>, <&kp LA(E)>;
-        };
-    };
 };
 
 / {
@@ -74,20 +50,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
-        };
-
-        Win_List: Win_List {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_CONTROL &sk LEFT_SHIFT &kp Y>;
-            label = "WIN_LIST";
-        };
-
-        PrimPiano: PrimPiano {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_WIN &sk LEFT_CONTROL &kp T>;
-            label = "PRIMPIANO";
         };
     };
 
