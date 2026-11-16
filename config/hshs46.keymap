@@ -11,7 +11,6 @@
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &mmv {
     trigger-period-ms = <8>;          // Raddoppia la frequenza di invio dati al PC (movimento fluidissimo)
@@ -58,7 +57,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <30>;
-            bindings = <&macro_tap>, <&tog MAU>, <&macro_tap>, <&kp LA(E)>;
+            bindings = <&macro_tap>, <&tog 0>, <&macro_tap>, <&kp LA(E)>;
         };
     };
 };
@@ -103,47 +102,6 @@
             flavor = "tap-preferred";
         };
 
-        usa_caps: usa_caps {
-            compatible = "zmk,behavior-hold-tap";
-            label = "USA_CAPS";
-            bindings = <&caps_word>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        UsSHIFT: UsSHIFT {
-            compatible = "zmk,behavior-hold-tap";
-            label = "USSHIFT";
-            bindings = <&kp>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        ctrlWin: ctrlWin {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRLWIN";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-        };
-
-        shift_symb: shift_symb {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            display-name = "SCHIFTNUM";
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            label = "SHIFT_SYMB";
-            bindings = <&kp>, <&sl>;
-
-            hold-trigger-key-positions = <42>;
-        };
-
         frecce_maiuscole: frecce_maiuscole {
             compatible = "zmk,behavior-hold-tap";
             label = "FRECCE_MAIUSCOLE";
@@ -152,15 +110,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
-        };
-
-        scorri_clicca: scorri_clicca {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SCORRI_CLICCA";
-            #binding-cells = <2>;
-            bindings = <&mkp>, <&kp>;
-
-            tapping-term-ms = <180>;
         };
     };
 
@@ -230,11 +179,6 @@
             key-positions = <41 40>;
             layers = <0>;
         };
-
-        frecce {
-            bindings = <&nav_word 1>;
-            key-positions = <20 34>;
-        };
     };
 
     keymap {
@@ -252,10 +196,10 @@
  */
 
             bindings = <
-&none         &none  &kp W  &kp E  &kp R  &kp T                                                                 &mt Y Q  &kp U  &kp I      &kp O    &none              &none
-&none         &kp A  &kp S  &kp D  &kp F  &kp G                                                                 &kp H    &kp J  &kp K      &kp L    &kp P              &none
-&sk LEFT_WIN  &kp Z  &kp X  &kp C  &kp V  &kp B  &none                                              &none       &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &sk RIGHT_ALT
-                                   &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &sl 3  &caps_word  &none    &none
+&none         &none  &kp W  &kp E  &kp R  &kp T                                                                            &mt Y Q  &kp U  &kp I      &kp O    &none              &none
+&none         &kp A  &kp S  &kp D  &kp F  &kp G                                                                            &kp H    &kp J  &kp K      &kp L    &kp P              &none
+&sk LEFT_WIN  &kp Z  &kp X  &kp C  &kp V  &kp B  &none                                              &none                  &kp N    &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &sk RIGHT_ALT
+                                   &none  &none  &sk LEFT_CONTROL  &schiftnum 2 RIGHT_SHIFT  &sl 3  &frecce_maiuscole 1 0  &none    &none
             >;
         };
 
@@ -283,19 +227,9 @@
             display-name = "SIMBOLI";
             bindings = <
 &none   &none       &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &none      &none      &none      &none            &none
-&none   &Win_List   &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &porca   &kp LPAR   &kp RPAR   &kp UNDER  &troia       &none
+&none   &Win_List   &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &porca    &kp LPAR   &kp RPAR   &kp UNDER  &troia           &none
 &kp F2  &PrimPiano  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH  &kp COLON  &kp SEMI   &kp PRINTSCREEN  &kp F4
                                          &none          &none     &none  &none  &none  &none  &none     &none
-            >;
-        };
-
-        MOUSE {
-            display-name = "MOUSE";
-            bindings = <
-&trans  &trans  &kp W  &kp E  &kp R  &kp T                                                      &kp Q  &kp U           &mmv MOVE_UP    &kp O            &trans  &trans
-&trans  &kp A   &kp S  &kp D  &kp F  &kp G                                                      &kp H  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp P   &trans
-&trans  &kp Z   &kp X  &kp C  &kp V  &kp B  &trans                                &trans        &kp N  &kp M           &trans          &trans           &trans  &trans
-                              &none  &none  &msc SCRL_DOWN  &mkp LCLK  &mkp RCLK  &msc SCRL_UP  &none  &none
             >;
         };
     };
