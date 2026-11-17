@@ -168,9 +168,9 @@
         Frecce {
             display-name = "mouve";
             bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans                                                               &trans  &trans    &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &kp DOWN  &kp UP  &trans                                                               &trans  &kp LEFT  &kp RIGHT  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans  &trans                                    &trans             &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp UP    &trans                                                               &trans  &trans    &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                                                               &trans  &kp LEFT  &kp RIGHT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans                                    &trans             &trans  &trans    &trans     &trans  &trans  &trans
                                   &trans  &trans  &kp LEFT_CONTROL  &kp LSHIFT  &kp RSHIFT  &kp RIGHT_CONTROL  &trans
             >;
         };
