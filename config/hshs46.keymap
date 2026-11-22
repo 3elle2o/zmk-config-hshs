@@ -142,10 +142,10 @@
  */
 
             bindings = <
-&sk LEFT_WIN  &none  &kp W  &kp E  &kp R  &kp T                                                                  &mt Y Q  &kp U        &kp I      &kp O    &none              &sk RIGHT_ALT
-&none         &kp A  &kp S  &kp D  &kp F  &kp G                                                                  &kp H    &kp J        &kp K      &kp L    &kp P              &none
-&none         &kp Z  &kp X  &kp C  &kp V  &kp B           &TAB                                      &nav_word 1  &kp N    &kp M        &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                                   &none  &sk LEFT_CONTRO &none  &schiftnum 2 RIGHT_SHIFT    &sl 3  &none        &CAPS    &none
+&sk LEFT_WIN  &none  &kp W  &kp E  &kp R  &kp T                                                                    &mt Y Q   &kp U  &kp I      &kp O    &none              &sk RIGHT_ALT
+&none         &kp A  &kp S  &kp D  &kp F  &kp G                                                                    &kp H     &kp J  &kp K      &kp L    &kp P              &none
+&none         &kp Z  &kp X  &kp C  &kp V  &kp B             &kp TAB                                   &nav_word 1  &kp N     &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                                   &none  &sk LEFT_CONTROL  &none    &schiftnum 2 RIGHT_SHIFT  &sl 3  &none        &kp CAPS  &none
             >;
         };
 
@@ -155,7 +155,7 @@
 &trans  &trans  &trans  &trans  &kp UP    &trans                                                               &trans  &trans    &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans                                                               &trans  &kp LEFT  &kp RIGHT  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans                                    &trans             &trans  &trans    &trans     &trans  &trans  &trans
-                                  &trans  &trans  &kp LEFT_CONTROL  &kp LSHIFT  &kp RSHIFT  &kp RIGHT_CONTROL  &trans
+                                &trans    &trans  &kp LEFT_CONTROL  &kp LSHIFT  &kp RSHIFT  &kp RIGHT_CONTROL  &trans
             >;
         };
 
@@ -172,10 +172,10 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&none   &none       &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &none      &none      &none      &none            &none
-&none   &none       &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &porca    &kp LPAR   &kp RPAR   &kp UNDER  &troia           &none
-&kp F2  &none       &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH  &kp COLON  &kp SEMI   &kp PRINTSCREEN  &kp F4
-                                         &none          &none     &none  &none  &none  &none  &none     &none
+&none   &none  &kp LBKT   &kp RBKT  &kt LBRC       &kp RBRC                              &kp AT    &none      &none      &none      &none            &none
+&none   &none  &kp PIPE   &kp BSLH  &kp LESS_THAN  &kp GT                                &porca    &kp LPAR   &kp RPAR   &kp UNDER  &troia           &none
+&kp F2  &none  &kp CARET  &kp HASH  &kp DOLLAR     &kp AMPS  &none                &none  &kp HOME  &kp SLASH  &kp COLON  &kp SEMI   &kp PRINTSCREEN  &kp F4
+                                    &none          &none     &none  &none  &none  &none  &none     &none
             >;
         };
     };
