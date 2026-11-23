@@ -64,6 +64,14 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        mau_word: mau_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <DOWN UP LEFT RIGHT>;
+            ignore-modifiers;
+            label = "MAU_WORD";
+        };
     };
 
     combos {
