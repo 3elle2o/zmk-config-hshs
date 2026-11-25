@@ -92,6 +92,16 @@
             label = "TAB_WIN";
             bindings = <&sk>, <&kp>;
         };
+
+        w_mau: w_mau {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            display-name = "SCHIFTNUM";
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            label = "W_MAU";
+            bindings = <&mau_word>, <&kp>;
+        };
     };
 
     combos {
@@ -171,10 +181,10 @@
  */
 
             bindings = <
-&trans  &none  &kp W  &kp E  &kp R  &kp T                                                                                          &mt Y Q     &kp U  &kp I      &kp O    &none              &none
-&none   &kp A  &kp S  &kp D  &kp F  &kp G                                                                                          &kp H       &kp J  &kp K      &kp L    &kp P              &none
-&none   &kp Z  &kp X  &kp C  &kp V  &kp B             &tab_win TAB LEFT_WIN                                   &alt_nav LEFT_ALT 0  &kp N       &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
-                             &none  &sk LEFT_CONTROL  &none                  &schiftnum 2 RIGHT_SHIFT  &sl 3  &none                &caps_word  &none
+&trans  &none  &w_mau 0 W  &kp E  &kp R  &kp T                                                                                          &mt Y Q     &kp U  &kp I      &kp O    &none              &none
+&none   &kp A  &kp S       &kp D  &kp F  &kp G                                                                                          &kp H       &kp J  &kp K      &kp L    &kp P              &none
+&none   &kp Z  &kp X       &kp C  &kp V  &kp B             &tab_win TAB LEFT_WIN                                   &alt_nav LEFT_ALT 0  &kp N       &kp M  &kp COMMA  &kp DOT  &mt EXCL QUESTION  &none
+                                  &none  &sk LEFT_CONTROL  &none                  &schiftnum 2 RIGHT_SHIFT  &sl 3  &none                &caps_word  &none
             >;
         };
 
